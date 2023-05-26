@@ -1,0 +1,52 @@
+Title: Election Algorithms
+
+Aim: To Implement Bully and Ring algorithm for leader election.
+
+Objective:
+1. To enable distributed systemsto select a leader in a decentralized manner, withoutrequiring
+a centralized control mechanism.
+2. To ensure that the leader selection process is reliable and efficient, even in the presence
+of failures, network delays, and other forms of uncertainty.
+3. To provide a fair and deterministic method for selecting the leader, such that all nodes in
+the system have an equal chance of being chosen.
+
+Tools / Environment:
+Java Programming Environment, JDK 1.8, Eclipse Neon(EE).
+
+Related Theory: Election Algorithm:
+1. Many distributed algorithms require a process to act as a coordinator.
+2. The coordinator can be any process that organizes actions of other processes.
+3. A coordinator may fail.
+4. How is a new coordinator chosen or elected?
+
+Assumptions:
+Each process has a unique number to distinguish them. Processes know each other's process
+number.\
+There are two types of Distributed Algorithms:
+1. Bully Algorithm
+2. Ring Algorithm
+
+For Ring Algorithm:
+1. Creating Class for Process which includes
+i) State: Active / Inactive
+ii) Index: Stores index of process.
+iii) ID: Process ID
+2. Import Scanner Class for getting input from Console
+3. Getting input from User for number of Processes and store them into object of classes.
+4. Sort these objects on the basis of process id.
+5. Make the last process id as "inactive".
+6. Ask for menu 1.Election 2.Exit
+7. Ask for initializing election process.
+8.These inputs will be used by Ring Algorithm.
+
+Conclusion:
+Election algorithms are designed to choose a coordinator. We have two election algorithms for
+two different configurations of distributed system. The Bully algorithm applies to system where
+every process can send a message to every other process in the system and The Ring algorithm
+applies to systems organized as a ring (logically or physically). In this algorithm we assume that
+the link between the processes are unidirectional and every process can message to the process on
+its right only.
+
+Outcome:
+1. Students learned the fundamentals of process coordinator election algorithms in DS
+2. Students developed Bully and Ring algorithm for leader election
